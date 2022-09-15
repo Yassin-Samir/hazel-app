@@ -45,7 +45,7 @@ const section = () => {
               x: `${(ind - pos) * 60}vw`,
             }}
           >
-            <img src={i} loading="lazy" />
+            <img src={i} loading="eager" /> 
           </motion.div>
         ))}
       </div>
