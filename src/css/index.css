@@ -1,0 +1,46 @@
+:root {
+  --font-weight: 500;
+  --font-size: 11px;
+  --main-color: gray;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Hind", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#root {
+  width: 100vw;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  color: black;
+}
+li {
+  list-style: none;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+.material-symbols-outlined {
+  user-select: none;
+}

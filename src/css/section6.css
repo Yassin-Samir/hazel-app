@@ -1,0 +1,45 @@
+.father {
+  position: relative;
+  max-width: 1199px;
+  display: flex;
+  padding: 50px 0px;
+  flex-wrap: wrap;
+  margin: 10px auto 0;
+}
+
+.father > p {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
+.iconss {
+  max-width: 100%;
+  height: 90%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.child {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 50px 10px;
+}
+.child > .material-symbols-outlined {
+  font-size: 3rem;
+}
+.child > p:first-of-type {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.child > p:not(:first-of-type) {
+  color: gray;
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+}

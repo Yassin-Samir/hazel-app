@@ -1,0 +1,9 @@
+.section8 {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  margin-top: 100px;
+}
