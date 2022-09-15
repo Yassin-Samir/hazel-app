@@ -16,6 +16,7 @@
 .section4 > p {
   font-size: 3rem;
   width: 90%;
+  text-align: center;
 }
 .section4 .grid {
   width: 100%;
