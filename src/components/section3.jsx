@@ -1,7 +1,7 @@
 //@ts-nocheck
 import React from "react";
 import "../css/section3.css";
-import Haze from "../assets/mockup2.png";
+import haze3 from "../assets/mockup2.webp";
 const section3 = () => {
   return (
     <div className="section">
@@ -20,7 +20,7 @@ const section3 = () => {
         </div>
         <button>OUTSTANDING FEATURES</button>
       </div>
-      <img src={Haze} loading="lazy" />
+      <img src={haze3} loading="lazy" />
     </div>
   );
 };
