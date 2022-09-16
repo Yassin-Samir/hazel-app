@@ -32,7 +32,7 @@ export default function App() {
       }
     };
     window.addEventListener("scroll", scroll);
-  });
+  }, []);
   return (
     <>
       <Nav />

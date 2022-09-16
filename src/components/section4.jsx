@@ -13,20 +13,23 @@ const Section4 = () => {
     },
     { threshold: 0 }
   );
-  useEffect(() =>
-    document.querySelectorAll(".last").forEach((i) => barsObserver.observe(i))
+  useEffect(
+    () =>
+      document
+        .querySelectorAll(".last")
+        .forEach((i) => barsObserver.observe(i)),
+    []
   );
   return (
     <motion.div
       className="section4"
       initial={{
-        x: "50vw",
+        x: "-50vw",
       }}
       whileInView={{
         x: "0",
         transition: {
-          type: "spring",
-          stiffness: 100,
+          type: "keyframes",
         },
       }}
     >

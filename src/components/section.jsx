@@ -3,11 +3,6 @@ import React, { useState } from "react";
 import Mac from "../assets/mac.jpg";
 import Mac1 from "../assets/mac1.jpg";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
 import "../css/section.css";
 const section = () => {
   const slides = [Mac, Mac1];
@@ -43,6 +38,9 @@ const section = () => {
             animate={{
               display: ind === pos ? "block" : "none",
               x: `${(ind - pos) * 60}vw`,
+              transition: {
+                type: "just",
+              },
             }}
           >
             <img src={i} loading="eager" />

@@ -6,13 +6,12 @@ const Section7 = () => {
     <motion.div
       className="section7"
       initial={{
-        x: "90vw",
+        x: "50vw",
       }}
       whileInView={{
         x: "0",
         transition: {
-          type: "spring",
-          stiffness: 50,
+          type: "keyframes",
         },
       }}
     >

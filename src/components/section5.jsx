@@ -19,8 +19,12 @@ const section5 = () => {
     },
     { threshold: 0 }
   );
-  useEffect(() =>
-    document.querySelectorAll(".inter").forEach((i) => intersection.observe(i))
+  useEffect(
+    () =>
+      document
+        .querySelectorAll(".inter")
+        .forEach((i) => intersection.observe(i)),
+    []
   );
   return (
     <>
@@ -32,8 +36,7 @@ const section5 = () => {
         whileInView={{
           x: "0",
           transition: {
-            type: "spring",
-            stiffness: 50,
+            type: "keyframes",
           },
         }}
       >
