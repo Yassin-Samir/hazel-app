@@ -1,9 +1,98 @@
 .section8 {
-  height: 500px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
   margin-top: 100px;
+  gap: 15px;
+}
+.section8 > p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+.grid-sys {
+  max-width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  min-height: 450px;
+  justify-content: center;
+}
+.grid-sys > div {
+  overflow: hidden;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  position: relative;
+}
+
+.grid-sys > div img {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.header,
+.foot {
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  transition: 0.5s 0.1s ease;
+  -webkit-transition: 0.5s 0.1s ease;
+  -moz-transition: 0.5s 0.1s ease;
+  -ms-transition: 0.5s 0.1s ease;
+  -o-transition: 0.5s 0.1s ease;
+}
+
+.header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.foot {
+  color: gray;
+  font-size: 0.9rem;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+@media (hover: hover) {
+  .grid-sys > div:hover .foot,
+  .grid-sys > div:hover .header {
+    opacity: 1;
+  }
+  .grid-sys > div:hover {
+    background-color: black;
+  }
+  .grid-sys > div:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    opacity: 0;
+  }
 }

@@ -1,0 +1,41 @@
+.section9 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-height: 280px;
+  margin-top: 35px;
+}
+.section9 > div {
+  min-height: 220px;
+  min-width: 40%;
+  max-width: 337px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section9 > p:first-child {
+  letter-spacing: 10px;
+  font-weight: 100;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0.5;
+}
+.head12 {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 7px;
+  font-weight: 700;
+  width: 100%;
+}

@@ -3,7 +3,6 @@ import React from "react";
 import "../css/section3.css";
 import Haze from "../assets/mockup2.png";
 const section3 = () => {
-  console.log(Haze);
   return (
     <div className="section">
       <div>
