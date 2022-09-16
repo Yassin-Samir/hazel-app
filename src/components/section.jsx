@@ -27,7 +27,7 @@ const section = () => {
     },
   };
   return (
-    <section>
+    <section id="section">
       <span
         className="material-symbols-outlined left"
         onClick={() => setpos(pos > 0 ? 0 : 1)}
