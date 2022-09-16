@@ -51,7 +51,6 @@ section {
 }
 .right {
   right: 5%;
-  rotate: y 180deg;
 }
 .powr {
   color: black;

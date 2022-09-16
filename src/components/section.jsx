@@ -45,7 +45,7 @@ const section = () => {
               x: `${(ind - pos) * 60}vw`,
             }}
           >
-            <img src={i} loading="eager" /> 
+            <img src={i} loading="eager" />
           </motion.div>
         ))}
       </div>
@@ -81,7 +81,7 @@ const section = () => {
         className="material-symbols-outlined right"
         onClick={() => setpos(pos > 0 ? 0 : 1)}
       >
-        arrow_back_ios
+        arrow_forward_ios
       </span>
     </section>
   );
