@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import "../css/section5.css";
-import pic from "../assets/1.jpg";
 const section5 = () => {
   const intersection = new IntersectionObserver(
     (i) => {

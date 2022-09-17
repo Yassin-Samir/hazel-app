@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React, { useEffect, Suspense } from "react";
+import React, { useEffect } from "react";
 import Nav from "./components/nav";
 import Section from "./components/section";
 import Section2 from "./components/section2";
