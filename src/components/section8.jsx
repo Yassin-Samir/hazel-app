@@ -6,23 +6,10 @@ import third from "../assets/grid/3.jpg";
 import fourth from "../assets/grid/4.jpg";
 import fifth from "../assets/grid/5.jpg";
 import sixth from "../assets/grid/6.jpg";
-import { motion } from "framer-motion";
 const section8 = () => {
   const arr = [first, second, third, fourth, fifth, sixth];
   return (
-    <motion.div
-      className="section8"
-      initial={{
-        x: "-90vw",
-      }}
-      whileInView={{
-        x: "0",
-        transition: {
-          type: "keyframes",
-          delay: 0.3,
-        },
-      }}
-    >
+    <div className="section8">
       <p>OUR LATEST WORK</p>
       <div className="grid-sys">
         {arr.map((i, ind) => {
@@ -35,7 +22,7 @@ const section8 = () => {
           );
         })}
       </div>
-    </motion.div>
+    </div>
   );
 };
 export { section8 as Section8 };

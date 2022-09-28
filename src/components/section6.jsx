@@ -1,20 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "../css/section6.css";
 const section6 = () => {
   return (
-    <motion.div
-      className="father"
-      initial={{
-        x: "-50vw",
-      }}
-      whileInView={{
-        x: "0",
-        transition: {
-          type: "keyframes",
-        },
-      }}
-    >
+    <div className="father">
       <p>OUR SERVICES</p>
       <div className="iconss">
         <div className="child">
@@ -54,7 +42,7 @@ const section6 = () => {
           <p>amet consect.</p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

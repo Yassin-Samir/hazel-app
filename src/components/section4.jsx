@@ -1,6 +1,5 @@
 //@ts-nocheck
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
 import "../css/section4.css";
 const Section4 = () => {
   const barsObserver = new IntersectionObserver(
@@ -21,18 +20,7 @@ const Section4 = () => {
     []
   );
   return (
-    <motion.div
-      className="section4"
-      initial={{
-        x: "-50vw",
-      }}
-      whileInView={{
-        x: "0",
-        transition: {
-          type: "keyframes",
-        },
-      }}
-    >
+    <div className="section4">
       <p>
         "WHAT SEPARATES DESIGN FROM ART IS THAT DESIGN IS MEANT TO BE…
         FUNCTIONAL "
@@ -81,7 +69,7 @@ const Section4 = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 export default Section4;
