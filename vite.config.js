@@ -5,4 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: { outDir: "./docs", clean: true },
   server: { open: true },
+  css: {
+    devSourcemap: true,
+  },
 });
