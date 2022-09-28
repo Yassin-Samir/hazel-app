@@ -14,7 +14,7 @@ const section8 = () => {
       <div className="grid-sys">
         {arr.map((i, ind) => {
           return (
-            <div key={ind} as="a" href="youtube.com" target="_blank">
+            <div key={ind} target="_blank">
               <img src={i} loading="lazy" />
               <p className="header">Clean display</p>
               <p className="foot">gamed</p>
