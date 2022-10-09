@@ -5,9 +5,9 @@ import { faCartShopping, faSearch } from "@fortawesome/free-solid-svg-icons";
 import Hazel from "../assets/logo.png";
 import Hazel1 from "../assets/logo_light.png";
 import "../css/nav.css";
-const nav = () => {
+const nav = ({ state }) => {
   return (
-    <nav>
+    <nav className={`${state ? `above` : `under`}`}>
       <img src={Hazel} loading="lazy" />
       <img src={Hazel1} loading="lazy" />
       <div className="nav">
@@ -45,5 +45,4 @@ const nav = () => {
     </nav>
   );
 };
-
 export default nav;

@@ -9,10 +9,8 @@ nav {
   top: 0;
   justify-content: space-between;
   align-items: center;
-  height: 85px;
   width: 100%;
   padding: 0 30px;
-  color: var(--main-color);
   background-color: transparent;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -24,13 +22,29 @@ nav {
 nav img {
   height: 16px;
 }
-nav img:last-of-type {
-  display: none;
-}
 .nav > ul > li {
   display: inline;
   padding: 0 20px;
 }
 .nav > ul > li svg {
   height: 16px;
+}
+nav.under {
+  background-color: transparent;
+  height: 85px;
+  color: gray;
+}
+nav.under img:first-of-type {
+  display: block;
+}
+nav.under img:last-of-type {
+  display: none;
+}
+nav.above {
+  background-color: black;
+  height: 75px;
+  color: white;
+}
+nav.above img:first-of-type {
+  display: none;
 }

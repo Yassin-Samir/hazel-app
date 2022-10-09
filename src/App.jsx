@@ -12,30 +12,22 @@ import { Section8 } from "./components/section8";
 import Section9 from "./components/section9";
 import Footer from "./components/footer";
 export default function App() {
+  const [state, setState] = React.useState(false);
+  const [pageYOffset, setPageYOffset] = React.useState(window.pageYOffset);
   useEffect(() => {
-    const scroll = () => {
-      const nav = document.querySelector("nav");
-      const img = document.querySelector("nav img");
-      if (window.pageYOffset >= 25) {
-        nav.style.backgroundColor = "black";
-        nav.style.height = "75px";
-        nav.style.color = "white";
-        img.style.color = "white";
-        document.querySelector("nav img:last-of-type").style.display = "block";
-        document.querySelector("nav img:first-of-type").style.display = "none";
-      } else if (window.pageYOffset <= 25) {
-        nav.style.backgroundColor = "transparent";
-        nav.style.height = "85px";
-        nav.style.color = "gray";
-        document.querySelector("nav img:first-of-type").style.display = "block";
-        document.querySelector("nav img:last-of-type").style.display = "none";
-      }
-    };
-    window.addEventListener("scroll", scroll);
-  }, []);
+    window.addEventListener(
+      "scroll",
+      () => {
+        setPageYOffset(window.pageYOffset);
+      },
+      { once: true }
+    );
+    if (pageYOffset >= 25) setState(true);
+    else setState(false);
+  }, [pageYOffset]);
   return (
     <>
-      <Nav />
+      <Nav state={state} />
       <Section />
       <Section2 />
       <Section3 />
