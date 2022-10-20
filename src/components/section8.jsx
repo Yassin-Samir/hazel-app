@@ -25,4 +25,4 @@ const section8 = () => {
     </div>
   );
 };
-export { section8 as Section8 };
+export default section8;

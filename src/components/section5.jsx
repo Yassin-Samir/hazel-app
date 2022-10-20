@@ -58,4 +58,4 @@ function Div({ icon, num, p }) {
     </div>
   );
 }
-export { section5 as Section5 };
+export default  section5 

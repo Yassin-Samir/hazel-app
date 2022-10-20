@@ -5,7 +5,11 @@ import { faCartShopping, faSearch } from "@fortawesome/free-solid-svg-icons";
 import Hazel from "../assets/logo.png";
 import Hazel1 from "../assets/logo_light.png";
 import "../css/nav.css";
-const nav = ({ state }) => {
+const nav = () => {
+  const [state, setState] = React.useState(false);
+  React.useEffect(() => {
+    window.onscroll = () => setState(window.pageYOffset >= 25 ? true : false);
+  }, []);
   return (
     <nav className={`${state ? `above` : `under`}`}>
       <img src={Hazel} loading="lazy" />

@@ -46,4 +46,4 @@ const section6 = () => {
   );
 };
 
-export { section6 as Section6 };
+export default  section6 
