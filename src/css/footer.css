@@ -3,10 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#ffe7bb;
+  background-color: #ffe7bb;
   margin-top: 50px;
 }
 .footer img {
   width: fit-content;
+  cursor: pointer;
   height: fit-content;
 }

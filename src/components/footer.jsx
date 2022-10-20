@@ -4,9 +4,7 @@ import "../css/footer.css";
 function footer() {
   return (
     <div className="footer">
-      <a href="#section">
-        <img src={hazel} />
-      </a>
+      <img src={hazel} onClick={() => window.scrollTo({ top: 0 })} />
     </div>
   );
 }
